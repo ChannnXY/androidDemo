@@ -6,35 +6,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/sp_dialog"
-        android:spinnerMode="dialog"/>
-
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/sp_dropdown"
-        android:spinnerMode="dropdown"/>
-
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/sp_simple"
-        android:spinnerMode="dialog"/>
+    tools:context=".datePickActivity">
 
     <Button
-        android:id="@+id/toNext_btn"
+        android:id="@+id/btn_choose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="页面跳转"/>
+        android:text="请选择日期"/>
+
+    <DatePicker
+        android:id="@+id/dp_date"
+        android:datePickerMode="spinner"
+        android:spinnersShown="true"
+        android:calendarViewShown="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/toLogin_btn"
+        android:id="@+id/btn_confirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="登录"/>
+        android:text="确定"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您选择的是"/>
+
 </LinearLayout>
